@@ -59,7 +59,7 @@ recuperando dados do formulario
   </body>
 </html>
 ```
-
+recuperando valores dos 2 inputs e enviando para a função soma e exibindo o resultado na div resultado.
 ```javascript
 <!DOCTYPE html>
 <html>
