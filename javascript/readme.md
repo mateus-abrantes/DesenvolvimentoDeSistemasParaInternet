@@ -154,6 +154,70 @@ recuperando valores dos 2 inputs e enviando para a função soma e exibindo o re
 </html>
 ```
 
+## Calculadora em Jquery
+```javascript
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script>
+       function soma(x, y)
+       { 
+         var resultado = x+y;
+         return resultado;
+       }
+      function sub(x, y)
+       { 
+         var resultado = x-y;
+         return resultado;
+       }
+      function mult(x, y)
+       { 
+         var resultado = x*y;
+         return resultado;
+       }
+      function div(x, y)
+       { 
+         var resultado = x/y;
+         return resultado;
+       }
+      
+      $(document).ready(function(){
+        $("#btsoma").click(function(){
+          var a = parseInt($("#a").val());
+          var b = parseInt($("#b").val());
+          $("#resultado").html(soma(a,b));
+        });
+        $("#btsub").click(function(){
+          var a = parseInt($("#a").val());
+          var b = parseInt($("#b").val());
+          $("#resultado").html(sub(a,b));
+        });
+        $("#btmult").click(function(){
+          var a = parseInt($("#a").val());
+          var b = parseInt($("#b").val());
+          $("#resultado").html(mult(a,b));
+        });
+        $("#btdiv").click(function(){
+          var a = parseInt($("#a").val());
+          var b = parseInt($("#b").val());
+          $("#resultado").html(div(a,b));
+        });
+      });
+    </script>
+  </head>
+  <body>
+      <div id="resultado"></div>  
+      A:<input id="a" type="text"></br>
+      B:<input id="b" type="text"></br></br>
+      <button id="btsoma">+</button>
+      <button id="btsub">-</button>
+      <button id="btmult">*</button>
+      <button id="btdiv">/</button>
+  </body>
+</html>
+```
+
 ## HTML consumindo json via ajax
 ```javascript
 <!DOCTYPE html>
