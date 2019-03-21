@@ -153,6 +153,34 @@ recuperando valores dos 2 inputs e enviando para a função soma e exibindo o re
   </body>
 </html>
 ```
+
+## HTML consumindo json via ajax
+```javascript
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $.ajax({
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
+      $("#resultado").html("nome:"+data.results[0].name.first);
+      $("#resultado").append("<br>username:"+data.results[0].login.username);$
+      $("#resultado").append("<br>celular:"+data.results[0].cell);
+    }
+  });
+});
+</script>
+</head>
+<body>
+<div id="resultado"></div>
+</body>
+</html>
+```
+
 ## APIs publicas
 
 https://randomuser.me
