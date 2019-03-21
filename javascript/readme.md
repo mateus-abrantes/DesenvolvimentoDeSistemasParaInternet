@@ -168,8 +168,9 @@ $(document).ready(function(){
     success: function(data) {
       console.log(data);
       $("#resultado").html("nome:"+data.results[0].name.first);
-      $("#resultado").append("<br>username:"+data.results[0].login.username);$
+      $("#resultado").append("<br>username:"+data.results[0].login.username);
       $("#resultado").append("<br>celular:"+data.results[0].cell);
+      $("#resultado").append("<br><img src='"+data.results[0].picture.large+"'/>");
     }
   });
 });
