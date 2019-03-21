@@ -6,6 +6,7 @@ utilizar o w3schools para criar uma página com validação de formulario
 https://www.w3schools.com/js/default.asp
 ## Criar uma calculadora em javascript
 
+Função SOMA e formulário
 ```javascript
 <!DOCTYPE html>
 <html>
@@ -19,7 +20,6 @@ https://www.w3schools.com/js/default.asp
        var x = soma(10,20);
        console.log(x);
     </script>
-    <script src="myscript.js"></script>
   </head>
   <body>
       <div id="resultado"></div>  
@@ -31,7 +31,7 @@ https://www.w3schools.com/js/default.asp
   </body>
 </html>
 ```
-
+recuperando dados do formulario
 ```javascript
 <!DOCTYPE html>
 <html>
