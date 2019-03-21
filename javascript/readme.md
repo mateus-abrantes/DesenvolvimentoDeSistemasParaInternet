@@ -155,6 +155,12 @@ recuperando valores dos 2 inputs e enviando para a função soma e exibindo o re
 ```
 
 ## Calculadora em Jquery
+
+https://jquery.com/
+
+https://www.w3schools.com/jquery/default.asp
+
+
 ```javascript
 <!DOCTYPE html>
 <html>
